@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+   <!-- <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lview"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/btnadd"
+        android:layout_marginTop="38dp" />-->
+
+
+
+   <android.support.v7.widget.RecyclerView
+    android:layout_width="match_parent"
+    android:id="@+id/lview"
+    android:layout_height="wrap_content"/>
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:id="@+id/btnadd"
+        android:layout_alignRight="@+id/lview"
+        android:layout_below="@+id/lview"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText2"
+        android:layout_alignBottom="@+id/btnadd"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/btnadd"
+        android:layout_toStartOf="@+id/btnadd"
+
+        android:layout_marginRight="129dp"
+        android:layout_marginEnd="129dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnsrch"
+        android:text="search"
+        android:layout_below="@+id/lview"
+        android:layout_toLeftOf="@+id/btnadd"
+        android:layout_marginRight="41dp"
+        android:layout_marginEnd="41dp" />
+</RelativeLayout>
